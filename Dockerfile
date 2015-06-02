@@ -1,4 +1,4 @@
-FROM php:5.5-apache
+FROM php:5.5.25-apache
 
 RUN a2enmod expires headers rewrite \
     && echo "allow_url_fopen = On" > /usr/local/etc/php/conf.d/custom.ini \
